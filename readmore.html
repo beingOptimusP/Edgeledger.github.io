@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <a style="border:none" href="index.html"><span class="text-primary"><i class="fas fa-book-open"></i>
+                        Edge</span>Ledger</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Our Solutions</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>What we Do</h2>
+            <img src="images/blog/blog1.jpg" alt="" />
+            <p>
+                We’re helping clients build a treasury of the future and powering software partners to enhance their offerings.
+
+                Our mission is simple: provide a global transaction banking platform that is nimble, secure, and easy for clients to use
+                and for partners to connect to.
+            </p>
+            <p>
+                Self-service client onboarding and account opening as well as secure mobile authentication.
+                
+                
+                
+                API-enabled and fully integrated solutions powered by rich analytics, including liquidity management, virtual accounts,
+                payments, and escrow services.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#" id="fb"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" id="tw"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" id="yt"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" id="in"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020-EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
