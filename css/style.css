@@ -147,6 +147,10 @@ img {
     border-radius: 50%;
 }
 
+#team{
+    background-color: #DDAF94;
+}
+
 /* Callback form */
 .callback-form {
     width: 100%;
@@ -167,6 +171,7 @@ img {
     padding: 4px;
     height: 40px;
     border: #f5f5f5 1px solid;
+    border-radius: 10px;
 }
 
 .callback-form input:focus {
@@ -211,12 +216,24 @@ img {
     height: 200px;
 }
 
+.footer p{
+    padding-right: 25px;
+}
 .footer a {
     color: #fff;
 }
 
-.footer a:hover {
-    color: #28a745;
+#fb:hover{
+    color: #4267B2;
+}
+#tw:hover{
+    color: aqua;
+}
+#yt:hover{
+    color: red;
+}
+#in:hover{
+    color: blue;
 }
 
 .footer .social > * {
