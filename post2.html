@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <a style="border:none" href="index.html"><span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Siri</strong> |
+                20th Jan 2020
+            </p>
+            <img src="images/blog/blog1.jpg" alt="" />
+            <p>I’ve had many challenging jobs over the years. I used to be the person to persevere through even the hardest challenges.
+            For example, I worked as a street canvasser in NYC for a year in 2009.
+            
+            What is a street canvasser, you ask? Have you ever been stopped by someone on the sidewalk in a big city? Did this
+            person ask you to hand over your credit card and commit to a monthly donation to some sort of charity? (Note: This was
+            before the age of iPads. I was literally using a crayon to take a rubbing of their credit card.)
+            
+            I’m sure you can imagine it was the worst job ever.
+            
+            Street Canvassers stand on their feet all day long, try to talk to strangers, and hear the word “No” at least 100 times
+            for every yes.
+            
+            The job was so challenging that only an estimated 50% of new hires made it past their first three days. Only 10% passed
+            their third week. In the NYC office, only 1% made it past their first 3 months. Yet, I persevered to become the fourth
+            top fundraiser in the country, despite my hatred of the job.
+            
+            I was a recent college graduate in the midst of the great recession. I didn’t have a lot of options.
+            
+            Despite all my determination and grit (or perhaps because of it), I’ve experienced depression and anxiety throughout my
+            life. It’s become clear over the last few years as I’ve learned to manage it more effectively. When I look back on my
+            younger years, I can now see all the signs and symptoms.
+            
+            3 years ago (over the course of 2018), I was struggling with severe burnout and depression. One day in July, things got
+            extremely stressful at work. I woke up at 3 AM with a severe panic attack that lasted for 3 hours. Afterward, I knew
+            that I physically and emotionally could not go back to work.
+            
+            I found myself in a very challenging position. My identity was wrapped up in my career and being the feminist who could
+            climb the corporate ladder. And, I had always been the person who “pushed through” challenges.
+            
+            Yet, my body was literally shutting down my ability to do something as simple as think about work or open my work
+            computer. I now realize that because I didn’t consciously choose to get out of the bad situation, my body chose for me.
+            
+            While this experience was very challenging, it taught me some important lessons about putting myself first.
+            
+            A key financial concept known as F-You Money gave me the confidence to move forward in a way that prioritized my health
+            and happiness.
+            
+            I’ve also had more recent realizations about F-You money. I originally thought that the sole purpose of F-You Money was
+            to be able to get yourself out of a bad situation. After becoming an entrepreneur, I see that it can also allow you to
+            take advantage of an opportunity. F-You Money provides the financial and emotional safety net needed.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#" id="fb"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" id="tw"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" id="yt"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" id="in"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020-EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>

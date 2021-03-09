@@ -41,7 +41,7 @@
 
 .btn-outline {
     background: transparent;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
 /* Flex items */

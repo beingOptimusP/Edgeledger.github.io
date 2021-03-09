@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+            <a style="border:none" href="#home"><span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger</a>            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Siri</strong> |
+                20th Jan 2020
+            </p>
+            <img src="images/blog/blog1.jpg" alt="" />
+            <h3>4 Strategies to Negotiate a Higher Starting Salary</h3>
+            <p>
+            A few weeks ago, I had the opportunity to help one of my coaching clients negotiate her starting salary for a new role.
+            I was excited to see her walk away with something a lot more favorable than the original offer.
+            
+            Looking back on the discussion, here were the 4 main things I encouraged her to do.
+            
+            1. Know that Companies Expect You to (AND Benefit if you) Negotiate
+            First, almost* all companies expect you to negotiate. If you do not negotiate, you are typically leaving money on the
+            table. You are not selfish to negotiate. Negotiating is not pushy. Negotiation is part of the game.
+            
+            The company is making you an offer because they want you to work there. Typically, the structure is set-up to offer you
+            the lowest amount of money that they think you might accept. I wish it didn’t work this way.
+            
+            Hopefully, they shared a salary range upfront. Even if you did not have a conversation upfront, it is your job to tell
+            them what you need to accept the job happily and to feel valued.
+            
+            Here is additional important context about hiring from someone who served as a recruiter for many years.
+            
+            Hiring the right person can be extremely challenging. I’ve gone through many searches where we have hundreds of
+            applicants and come out the other side not wanting to hire any of them. Especially for mid- or higher-level roles, it’s
+            a myth that quality candidates are everywhere.
+            
+            They aren’t.
+            
+            Let’s also talk about the costs of recruitment. According to the Society for Human Resources Management, the
+            administrative and recruitment costs are around $4,000 per employee.
+            
+            I think this is a very low estimate. This might be possible if you are hiring hundreds of people for the same
+            entry-level job.
+            
+            If not, there are a lot of costs associated with hiring. These include:
+            
+            Creating the job description
+            Designing interview processes
+            Posting the roles on good job boards (that actually cost money)
+            The time associated with scheduling interviews and communicating with candidates
+            The time for everyone who needs to interview each candidate
+            The time to debrief the interviews and make a decision.
+            They certainly aren’t including all these costs when coming up with $4,000 to recruit a new employee.
+            
+            There’s another study that includes the costs of onboarding and says that a company could spend 38% of the first year’s
+            salary to hire and onboard a new person. Based on my experience, this seems a lot more accurate, especially for
+            higher-level roles. And, if they don’t hire the right person, that cost could be doubled.
+            
+            This context is important for one reason.
+            
+            If the company is making you an offer, they want to hire YOU to work there. And, if they don’t hire you, they could end
+            up spending almost 40% of your first year’s salary to hire someone else. There’s also likely not someone just as good as
+            you waiting in the wings.
+            
+            Given this context, the company should want to hear from you if $5,000-10,000 (or even $15,000) in salary would make a
+            difference in your decision. When I worked in HR, I certainly wanted to know this.
+            
+            Usually, we could go up.
+            
+            Sometimes, a company doesn’t have all the information about your qualifications or what you need to do the job. Think
+            about it this way. You are giving the company the choice of increasing your starting salary or needing to go back to the
+            drawing board and rehire. When faced with this choice, the better trade-off is usually to give the candidate more money.
+            
+            Let me repeat that… The better trade-off is usually to give the candidate more money.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#" id="fb"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" id="tw"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" id="yt"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" id="in"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020-EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
